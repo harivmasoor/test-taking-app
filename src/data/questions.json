@@ -1,0 +1,4361 @@
+{
+  "questions": [
+    {
+      "chapter": "3",
+      "section": "3.1",
+      "id": "3.3.1.1",
+      "text": "What is the role of the agent in a Markov decision process (MDP)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To define the environment's dynamics"
+        },
+        {
+          "id": "B",
+          "text": "To maximize immediate rewards only"
+        },
+        {
+          "id": "C",
+          "text": "To learn from interaction to achieve a goal"
+        },
+        {
+          "id": "D",
+          "text": "To calculate optimal probabilities"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.1",
+      "id": "3.3.1.2",
+      "text": "What does the environment provide to the agent at each time step?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Rewards, states, and actions"
+        },
+        {
+          "id": "B",
+          "text": "A state representation and reward signal"
+        },
+        {
+          "id": "C",
+          "text": "Immediate feedback only"
+        },
+        {
+          "id": "D",
+          "text": "An optimal policy"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.1",
+      "id": "3.3.1.3",
+      "text": "Which sequence defines the interaction in an MDP?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "States → Actions → Rewards"
+        },
+        {
+          "id": "B",
+          "text": "Actions → States → Rewards"
+        },
+        {
+          "id": "C",
+          "text": "States → Rewards → Actions"
+        },
+        {
+          "id": "D",
+          "text": "State, Action, Reward, State (SARS) trajectory"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapter": "3",
+      "section": "3.1",
+      "id": "3.3.1.4",
+      "text": "What is a key property of the Markov decision process?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Future states depend only on the current state and action"
+        },
+        {
+          "id": "B",
+          "text": "The agent always knows the optimal action"
+        },
+        {
+          "id": "C",
+          "text": "Rewards are deterministic"
+        },
+        {
+          "id": "D",
+          "text": "All states are terminal"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.1",
+      "id": "3.3.1.5",
+      "text": "What does the term \"Markov property\" signify in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Actions depend on a series of past states"
+        },
+        {
+          "id": "B",
+          "text": "Rewards are only influenced by terminal states"
+        },
+        {
+          "id": "C",
+          "text": "The current state summarizes all past relevant information"
+        },
+        {
+          "id": "D",
+          "text": "State transitions are independent of actions"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.2",
+      "id": "3.3.2.6",
+      "text": "What is the reward hypothesis in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "All goals can be defined as maximizing expected cumulative rewards"
+        },
+        {
+          "id": "B",
+          "text": "Goals are defined by minimizing immediate costs"
+        },
+        {
+          "id": "C",
+          "text": "Rewards and goals are unrelated concepts"
+        },
+        {
+          "id": "D",
+          "text": "Subgoals determine the agent's overall objective"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.2",
+      "id": "3.3.2.7",
+      "text": "Why is it important to define rewards carefully in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To minimize the computation of value functions"
+        },
+        {
+          "id": "B",
+          "text": "To ensure the agent achieves subgoals effectively"
+        },
+        {
+          "id": "C",
+          "text": "To align the agent's behavior with the intended goal"
+        },
+        {
+          "id": "D",
+          "text": "To make the environment fully deterministic"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.2",
+      "id": "3.3.2.8",
+      "text": "What is a primary function of the reward signal?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To provide the agent with prior knowledge"
+        },
+        {
+          "id": "B",
+          "text": "To communicate the desired outcome"
+        },
+        {
+          "id": "C",
+          "text": "To train the policy directly"
+        },
+        {
+          "id": "D",
+          "text": "To modify state-action mappings"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.2",
+      "id": "3.3.2.9",
+      "text": "Which of the following is NOT a valid example of reward design?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Providing +1 for each successful maze exit"
+        },
+        {
+          "id": "B",
+          "text": "Assigning a reward of zero for all non-terminal states"
+        },
+        {
+          "id": "C",
+          "text": "Penalizing jerky movements of a robot arm with negative rewards"
+        },
+        {
+          "id": "D",
+          "text": "Rewarding a chess agent for capturing opponent pieces"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapter": "3",
+      "section": "3.2",
+      "id": "3.3.2.10",
+      "text": "What makes the reward signal distinct in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It defines how to achieve the goal"
+        },
+        {
+          "id": "B",
+          "text": "It provides feedback after multiple episodes"
+        },
+        {
+          "id": "C",
+          "text": "It is the only scalar signal defining the agent's objective"
+        },
+        {
+          "id": "D",
+          "text": "It is deterministic and unchanging"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.3",
+      "id": "3.3.3.11",
+      "text": "What is the return (Gt) in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A measure of immediate rewards"
+        },
+        {
+          "id": "B",
+          "text": "The cumulative sum of rewards over time"
+        },
+        {
+          "id": "C",
+          "text": "A predefined terminal state"
+        },
+        {
+          "id": "D",
+          "text": "The agent’s current policy"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.3",
+      "id": "3.3.3.12",
+      "text": "Why is discounting used in calculating the return?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To prioritize immediate rewards over future ones"
+        },
+        {
+          "id": "B",
+          "text": "To simplify computations by reducing rewards"
+        },
+        {
+          "id": "C",
+          "text": "To handle infinite time horizons in continuing tasks"
+        },
+        {
+          "id": "D",
+          "text": "To ensure that all rewards are treated equally"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.3",
+      "id": "3.3.3.13",
+      "text": "How is the return calculated for episodic tasks?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By summing all rewards until the terminal state"
+        },
+        {
+          "id": "B",
+          "text": "By discounting future rewards indefinitely"
+        },
+        {
+          "id": "C",
+          "text": "By resetting values at the beginning of each episode"
+        },
+        {
+          "id": "D",
+          "text": "By averaging rewards across multiple episodes"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.3",
+      "id": "3.3.3.14",
+      "text": "What role does the discount rate (γ) play in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It limits the number of episodes the agent can experience"
+        },
+        {
+          "id": "B",
+          "text": "It defines the priority of long-term vs. short-term rewards"
+        },
+        {
+          "id": "C",
+          "text": "It removes the need for a terminal state in continuing tasks"
+        },
+        {
+          "id": "D",
+          "text": "It adjusts the learning rate of the agent"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.3",
+      "id": "3.3.3.15",
+      "text": "In which task is discounting NOT necessary?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Continuing tasks with infinite time steps"
+        },
+        {
+          "id": "B",
+          "text": "Episodic tasks with a natural terminal state"
+        },
+        {
+          "id": "C",
+          "text": "Tasks involving partial observability"
+        },
+        {
+          "id": "D",
+          "text": "Multi-agent reinforcement learning tasks"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.4",
+      "id": "3.3.4.16",
+      "text": "What is the key difference between episodic and continuing tasks in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Episodic tasks have terminal states, while continuing tasks do not"
+        },
+        {
+          "id": "B",
+          "text": "Episodic tasks maximize immediate rewards, while continuing tasks focus on long-term rewards"
+        },
+        {
+          "id": "C",
+          "text": "Episodic tasks involve stationary environments, while continuing tasks involve dynamic ones"
+        },
+        {
+          "id": "D",
+          "text": "Episodic tasks use deterministic policies, while continuing tasks use stochastic policies"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.4",
+      "id": "3.3.4.17",
+      "text": "How is the return (Gt) calculated in continuing tasks?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By summing all rewards until the terminal state"
+        },
+        {
+          "id": "B",
+          "text": "By applying a discount factor indefinitely"
+        },
+        {
+          "id": "C",
+          "text": "By averaging rewards across episodes"
+        },
+        {
+          "id": "D",
+          "text": "By normalizing the immediate reward signal"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.4",
+      "id": "3.3.4.18",
+      "text": "What is the role of the discount factor (γ) in unified notation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To distinguish between episodic and continuing tasks"
+        },
+        {
+          "id": "B",
+          "text": "To calculate the cumulative reward without considering terminal states"
+        },
+        {
+          "id": "C",
+          "text": "To ensure rewards are scaled uniformly across tasks"
+        },
+        {
+          "id": "D",
+          "text": "To define policy updates independently of task type"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.4",
+      "id": "3.3.4.19",
+      "text": "Why is a unified notation for episodic and continuing tasks useful?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It simplifies mathematical analysis and algorithm design"
+        },
+        {
+          "id": "B",
+          "text": "It eliminates the need for policy evaluation"
+        },
+        {
+          "id": "C",
+          "text": "It guarantees faster convergence of reinforcement learning algorithms"
+        },
+        {
+          "id": "D",
+          "text": "It avoids the need for discounting"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.4",
+      "id": "3.3.4.20",
+      "text": "What happens to the return (Gt) as γ approaches 1 in a continuing task?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Future rewards are disregarded"
+        },
+        {
+          "id": "B",
+          "text": "Immediate rewards dominate the return"
+        },
+        {
+          "id": "C",
+          "text": "All rewards are weighted equally regardless of time"
+        },
+        {
+          "id": "D",
+          "text": "The return becomes undefined"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.5",
+      "id": "3.3.5.21",
+      "text": "What is a policy (π) in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A mapping from states to actions"
+        },
+        {
+          "id": "B",
+          "text": "A value function for long-term rewards"
+        },
+        {
+          "id": "C",
+          "text": "A model of the environment’s dynamics"
+        },
+        {
+          "id": "D",
+          "text": "A deterministic set of state transitions"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.5",
+      "id": "3.3.5.22",
+      "text": "What does the state-value function (vπ) measure?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The cumulative reward for a state-action pair"
+        },
+        {
+          "id": "B",
+          "text": "The expected return starting from a state under policy π"
+        },
+        {
+          "id": "C",
+          "text": "The probability of reaching the terminal state"
+        },
+        {
+          "id": "D",
+          "text": "The difference between immediate and long-term rewards"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.5",
+      "id": "3.3.5.23",
+      "text": "What is the action-value function (qπ)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The probability of transitioning to a specific state"
+        },
+        {
+          "id": "B",
+          "text": "The expected reward of taking a specific action in a state under policy π"
+        },
+        {
+          "id": "C",
+          "text": "The total reward for all possible actions in a state"
+        },
+        {
+          "id": "D",
+          "text": "The sum of all discounted rewards"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.5",
+      "id": "3.3.5.24",
+      "text": "Why is the value function essential in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It directly determines the optimal policy"
+        },
+        {
+          "id": "B",
+          "text": "It helps evaluate and compare policies"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for exploration"
+        },
+        {
+          "id": "D",
+          "text": "It replaces the reward function"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.5",
+      "id": "3.3.5.25",
+      "text": "What is the Bellman equation for state-value functions?",
+      "choices": [
+        {
+          "id": "A",
+          "text": ""
+        },
+        {
+          "id": "B",
+          "text": ""
+        },
+        {
+          "id": "C",
+          "text": ""
+        },
+        {
+          "id": "D",
+          "text": ""
+        },
+        {
+          "id": "A",
+          "text": "It maximizes immediate rewards"
+        },
+        {
+          "id": "B",
+          "text": "It minimizes state transitions"
+        },
+        {
+          "id": "C",
+          "text": "It maximizes the expected return from all states"
+        },
+        {
+          "id": "D",
+          "text": "It reduces the variance of the reward signal"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.6",
+      "id": "3.3.6.26",
+      "text": "What is the relationship between optimal policies and value functions?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "All optimal policies share the same value function"
+        },
+        {
+          "id": "B",
+          "text": "Optimal policies have lower value functions than suboptimal ones"
+        },
+        {
+          "id": "C",
+          "text": "Value functions are irrelevant to optimal policies"
+        },
+        {
+          "id": "D",
+          "text": "Each optimal policy has a unique value function"
+        },
+        {
+          "id": "A",
+          "text": "The expected return under any policy"
+        },
+        {
+          "id": "B",
+          "text": "The maximum return achievable from a state"
+        },
+        {
+          "id": "C",
+          "text": "The average reward across all states"
+        },
+        {
+          "id": "D",
+          "text": "The total discounted rewards over all episodes"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.6",
+      "id": "3.3.6.27",
+      "text": "Which equation characterizes the optimal value of a state?",
+      "choices": [
+        {
+          "id": "A",
+          "text": ""
+        },
+        {
+          "id": "B",
+          "text": ""
+        },
+        {
+          "id": "C",
+          "text": ""
+        },
+        {
+          "id": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.6",
+      "id": "3.3.6.28",
+      "text": "How does the Bellman optimality equation define action-value functions?",
+      "choices": [
+        {
+          "id": "A",
+          "text": ""
+        },
+        {
+          "id": "B",
+          "text": ""
+        },
+        {
+          "id": "C",
+          "text": ""
+        },
+        {
+          "id": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.7",
+      "id": "3.3.7.29",
+      "text": "What challenge arises in finding optimal policies for large state spaces?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "States become deterministic"
+        },
+        {
+          "id": "B",
+          "text": "Value functions become undefined"
+        },
+        {
+          "id": "C",
+          "text": "Computational complexity increases"
+        },
+        {
+          "id": "D",
+          "text": "Rewards cannot be calculated"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.7",
+      "id": "3.3.7.30",
+      "text": "Which technique is commonly used to approximate value functions in large state spaces?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Exact enumeration"
+        },
+        {
+          "id": "B",
+          "text": "Randomized action selection"
+        },
+        {
+          "id": "C",
+          "text": "Function approximation"
+        },
+        {
+          "id": "D",
+          "text": "Bellman backups"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.7",
+      "id": "3.3.7.31",
+      "text": "Why is approximation necessary for optimality in large-scale problems?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It eliminates exploration needs"
+        },
+        {
+          "id": "B",
+          "text": "Exact computation becomes infeasible"
+        },
+        {
+          "id": "C",
+          "text": "Rewards are not well-defined"
+        },
+        {
+          "id": "D",
+          "text": "Policies are not stochastic"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.7",
+      "id": "3.3.7.32",
+      "text": "What is one limitation of approximate methods for finding optimal policies?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They require supervised data"
+        },
+        {
+          "id": "B",
+          "text": "They are prone to instability and divergence"
+        },
+        {
+          "id": "C",
+          "text": "They are slower than exact methods"
+        },
+        {
+          "id": "D",
+          "text": "They ignore the Markov property"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.7",
+      "id": "3.3.7.33",
+      "text": "How does policy iteration address large state-action spaces?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By approximating rewards in small increments"
+        },
+        {
+          "id": "B",
+          "text": "By iteratively evaluating and improving policies"
+        },
+        {
+          "id": "C",
+          "text": "By calculating exact value functions in batches"
+        },
+        {
+          "id": "D",
+          "text": "By random sampling of states"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.34",
+      "text": "What does the agent-environment interaction framework emphasize?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Supervised learning"
+        },
+        {
+          "id": "B",
+          "text": "Trial-and-error learning to maximize rewards"
+        },
+        {
+          "id": "C",
+          "text": "Predefined deterministic models"
+        },
+        {
+          "id": "D",
+          "text": "Unsupervised clustering"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.35",
+      "text": "Which reinforcement learning element is most closely tied to long-term planning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Rewards"
+        },
+        {
+          "id": "B",
+          "text": "Policies"
+        },
+        {
+          "id": "C",
+          "text": "Value functions"
+        },
+        {
+          "id": "D",
+          "text": "State transitions"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.36",
+      "text": "How does reinforcement learning differ from supervised learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It maximizes cumulative rewards instead of classifying data"
+        },
+        {
+          "id": "B",
+          "text": "It requires labeled data for training"
+        },
+        {
+          "id": "C",
+          "text": "It avoids using numerical feedback"
+        },
+        {
+          "id": "D",
+          "text": "It operates without any policy"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.37",
+      "text": "What is the primary outcome of solving a reinforcement learning problem?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Finding the shortest trajectory between states"
+        },
+        {
+          "id": "B",
+          "text": "Identifying the optimal policy"
+        },
+        {
+          "id": "C",
+          "text": "Building a model of the environment"
+        },
+        {
+          "id": "D",
+          "text": "Reducing exploration rates"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.38",
+      "text": "Why is understanding the Markov property essential in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It ensures the environment remains deterministic"
+        },
+        {
+          "id": "B",
+          "text": "It guarantees that past states influence decision-making"
+        },
+        {
+          "id": "C",
+          "text": "It simplifies modeling by summarizing history in the current state"
+        },
+        {
+          "id": "D",
+          "text": "It increases the complexity of algorithms"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.39",
+      "text": "What is the primary goal of policy evaluation in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To find the optimal policy"
+        },
+        {
+          "id": "B",
+          "text": "To compute the value function for a given policy"
+        },
+        {
+          "id": "C",
+          "text": "To determine the environment dynamics"
+        },
+        {
+          "id": "D",
+          "text": "To maximize immediate rewards"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.40",
+      "text": "What is the Bellman equation for policy evaluation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": ""
+        },
+        {
+          "id": "B",
+          "text": ""
+        },
+        {
+          "id": "C",
+          "text": ""
+        },
+        {
+          "id": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.41",
+      "text": "What type of updates are performed in iterative policy evaluation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Approximate updates"
+        },
+        {
+          "id": "B",
+          "text": "In-place updates"
+        },
+        {
+          "id": "C",
+          "text": "Expected updates"
+        },
+        {
+          "id": "D",
+          "text": "Randomized updates"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.42",
+      "text": "When does iterative policy evaluation terminate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "When the value function converges"
+        },
+        {
+          "id": "B",
+          "text": "After a fixed number of iterations"
+        },
+        {
+          "id": "C",
+          "text": "When the reward signal reaches zero"
+        },
+        {
+          "id": "D",
+          "text": "When all policies are evaluated"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "3",
+      "section": "3.8",
+      "id": "3.3.8.43",
+      "text": "What is the significance of using a discount factor (γ) in policy evaluation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It ensures convergence for continuing tasks"
+        },
+        {
+          "id": "B",
+          "text": "It ignores long-term rewards"
+        },
+        {
+          "id": "C",
+          "text": "It accelerates policy updates"
+        },
+        {
+          "id": "D",
+          "text": "It maximizes immediate rewards"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.2",
+      "id": "4.4.2.44",
+      "text": "What is the goal of the policy improvement step in dynamic programming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To compute the value function for a given policy"
+        },
+        {
+          "id": "B",
+          "text": "To generate a new policy that is greedy with respect to the current value function"
+        },
+        {
+          "id": "C",
+          "text": "To update the discount factor"
+        },
+        {
+          "id": "D",
+          "text": "To compute the environment dynamics"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.2",
+      "id": "4.4.2.45",
+      "text": "What does the policy improvement theorem guarantee?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The new policy is always optimal"
+        },
+        {
+          "id": "B",
+          "text": "The new policy is strictly better or equally good as the old policy"
+        },
+        {
+          "id": "C",
+          "text": "The value function remains constant"
+        },
+        {
+          "id": "D",
+          "text": "The state transitions become deterministic"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.2",
+      "id": "4.4.2.46",
+      "text": "How is a greedy policy defined?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A policy that selects actions randomly"
+        },
+        {
+          "id": "B",
+          "text": "A policy that selects actions maximizing the immediate reward"
+        },
+        {
+          "id": "C",
+          "text": "A policy that selects actions maximizing the one-step lookahead value"
+        },
+        {
+          "id": "D",
+          "text": "A policy that ignores future rewards"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "4",
+      "section": "4.2",
+      "id": "4.4.2.47",
+      "text": "What happens if the new policy is not strictly better than the old policy?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The process stops"
+        },
+        {
+          "id": "B",
+          "text": "The current policy is already optimal"
+        },
+        {
+          "id": "C",
+          "text": "The value function resets to zero"
+        },
+        {
+          "id": "D",
+          "text": "The environment transitions change"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.2",
+      "id": "4.4.2.48",
+      "text": "How are ties handled in policy improvement for stochastic policies?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "All suboptimal actions are assigned equal probability"
+        },
+        {
+          "id": "B",
+          "text": "Any action that maximizes the value can be chosen"
+        },
+        {
+          "id": "C",
+          "text": "All maximizing actions are assigned zero probability"
+        },
+        {
+          "id": "D",
+          "text": "Ties are resolved based on immediate rewards"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.3",
+      "id": "4.4.3.49",
+      "text": "What is the purpose of policy iteration?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To determine the environment dynamics"
+        },
+        {
+          "id": "B",
+          "text": "To find an optimal policy and value function through alternating evaluation and improvement"
+        },
+        {
+          "id": "C",
+          "text": "To maximize the cumulative reward without updating policies"
+        },
+        {
+          "id": "D",
+          "text": "To minimize computational cost"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.3",
+      "id": "4.4.3.50",
+      "text": "What is the sequence of steps in policy iteration?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Policy evaluation → Policy improvement → Optimality verification"
+        },
+        {
+          "id": "B",
+          "text": "Policy evaluation → Optimality verification → Policy improvement"
+        },
+        {
+          "id": "C",
+          "text": "Policy improvement → Policy evaluation → Optimality verification"
+        },
+        {
+          "id": "D",
+          "text": "Policy evaluation → Policy improvement → Policy evaluation"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapter": "4",
+      "section": "4.3",
+      "id": "4.4.3.51",
+      "text": "What guarantees the convergence of policy iteration?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The finite number of possible policies in an MDP"
+        },
+        {
+          "id": "B",
+          "text": "The continuous nature of value functions"
+        },
+        {
+          "id": "C",
+          "text": "The stochastic nature of environment dynamics"
+        },
+        {
+          "id": "D",
+          "text": "The absence of discounting in the reward signal"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.3",
+      "id": "4.4.3.52",
+      "text": "What is the result of applying the policy iteration process?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A sequence of suboptimal policies"
+        },
+        {
+          "id": "B",
+          "text": "A monotonically increasing value function"
+        },
+        {
+          "id": "C",
+          "text": "The optimal policy and value function"
+        },
+        {
+          "id": "D",
+          "text": "A decreasing reward signal"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "4",
+      "section": "4.3",
+      "id": "4.4.3.53",
+      "text": "Why does policy iteration often converge quickly?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It uses random updates for faster computation"
+        },
+        {
+          "id": "B",
+          "text": "Each policy evaluation starts with the value function of the previous policy"
+        },
+        {
+          "id": "C",
+          "text": "The environment dynamics simplify during updates"
+        },
+        {
+          "id": "D",
+          "text": "Immediate rewards are prioritized"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.4",
+      "id": "4.4.4.54",
+      "text": "What is the key difference between value iteration and policy iteration?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Value iteration updates the policy without evaluating the value function"
+        },
+        {
+          "id": "B",
+          "text": "Value iteration combines policy evaluation and improvement in a single step"
+        },
+        {
+          "id": "C",
+          "text": "Value iteration only works for deterministic environments"
+        },
+        {
+          "id": "D",
+          "text": "Value iteration skips the policy improvement step entirely"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.4",
+      "id": "4.4.4.55",
+      "text": "What is the Bellman optimality equation used in value iteration?",
+      "choices": [
+        {
+          "id": "A",
+          "text": ""
+        },
+        {
+          "id": "B",
+          "text": ""
+        },
+        {
+          "id": "C",
+          "text": ""
+        },
+        {
+          "id": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.4",
+      "id": "4.4.4.56",
+      "text": "When does value iteration terminate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "After a fixed number of iterations"
+        },
+        {
+          "id": "B",
+          "text": "When the value function converges within a threshold"
+        },
+        {
+          "id": "C",
+          "text": "When the policy becomes deterministic"
+        },
+        {
+          "id": "D",
+          "text": "When all state-action pairs are evaluated"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.4",
+      "id": "4.4.4.57",
+      "text": "What is the primary computational advantage of value iteration?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It avoids computing policies directly"
+        },
+        {
+          "id": "B",
+          "text": "It updates the policy and value function in parallel"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for an explicit reward signal"
+        },
+        {
+          "id": "D",
+          "text": "It simplifies the state-action mapping"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.4",
+      "id": "4.4.4.58",
+      "text": "v(s) in value iteration?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The reward function value"
+        },
+        {
+          "id": "B",
+          "text": "A heuristic estimate of future rewards"
+        },
+        {
+          "id": "C",
+          "text": "Zero or an arbitrary value"
+        },
+        {
+          "id": "D",
+          "text": "The average reward across all states"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "4",
+      "section": "4.5",
+      "id": "4.4.5.59",
+      "text": "What is the main feature of asynchronous dynamic programming methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They update all states simultaneously"
+        },
+        {
+          "id": "B",
+          "text": "They allow partial updates of states"
+        },
+        {
+          "id": "C",
+          "text": "They require a deterministic environment"
+        },
+        {
+          "id": "D",
+          "text": "They use random policy updates"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.5",
+      "id": "4.4.5.60",
+      "text": "Why are asynchronous methods computationally efficient?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They perform updates only for selected states"
+        },
+        {
+          "id": "B",
+          "text": "They skip policy improvement steps"
+        },
+        {
+          "id": "C",
+          "text": "They prioritize rewards over value functions"
+        },
+        {
+          "id": "D",
+          "text": "They combine exploration and exploitation"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.5",
+      "id": "4.4.5.61",
+      "text": "What is the effect of asynchronous updates on convergence?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They delay convergence significantly"
+        },
+        {
+          "id": "B",
+          "text": "They do not affect convergence if all states are updated eventually"
+        },
+        {
+          "id": "C",
+          "text": "They lead to divergence in most cases"
+        },
+        {
+          "id": "D",
+          "text": "They ensure immediate convergence"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.5",
+      "id": "4.4.5.62",
+      "text": "Which is an example of asynchronous dynamic programming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Sequential updates of states in a fixed order"
+        },
+        {
+          "id": "B",
+          "text": "Parallel updates of all state values"
+        },
+        {
+          "id": "C",
+          "text": "Randomized updates of policies"
+        },
+        {
+          "id": "D",
+          "text": "Stochastic sampling of rewards"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.5",
+      "id": "4.4.5.63",
+      "text": "What is a drawback of asynchronous dynamic programming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It cannot handle large state spaces"
+        },
+        {
+          "id": "B",
+          "text": "It may be less efficient for structured problems"
+        },
+        {
+          "id": "C",
+          "text": "It does not support stochastic environments"
+        },
+        {
+          "id": "D",
+          "text": "It always converges slower than synchronous methods"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.6",
+      "id": "4.4.6.64",
+      "text": "What is the goal of Generalized Policy Iteration (GPI)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To compute exact policies for all states"
+        },
+        {
+          "id": "B",
+          "text": "To allow simultaneous policy evaluation and improvement"
+        },
+        {
+          "id": "C",
+          "text": "To eliminate exploration in reinforcement learning"
+        },
+        {
+          "id": "D",
+          "text": "To optimize rewards without using value functions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.6",
+      "id": "4.4.6.65",
+      "text": "What distinguishes GPI from standard policy iteration?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "GPI operates on partial policies and value functions simultaneously"
+        },
+        {
+          "id": "B",
+          "text": "GPI skips the policy improvement step"
+        },
+        {
+          "id": "C",
+          "text": "GPI requires deterministic environments"
+        },
+        {
+          "id": "D",
+          "text": "GPI eliminates the Bellman equation"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.6",
+      "id": "4.4.6.66",
+      "text": "How does GPI balance policy evaluation and improvement?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By alternating between the two steps"
+        },
+        {
+          "id": "B",
+          "text": "By running both processes simultaneously in a single iteration"
+        },
+        {
+          "id": "C",
+          "text": "By using only partial updates to policies"
+        },
+        {
+          "id": "D",
+          "text": "By avoiding updates to value functions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.6",
+      "id": "4.4.6.67",
+      "text": "What ensures convergence in GPI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The monotonic improvement of the policy"
+        },
+        {
+          "id": "B",
+          "text": "The deterministic nature of rewards"
+        },
+        {
+          "id": "C",
+          "text": "The use of fixed iterations for evaluation"
+        },
+        {
+          "id": "D",
+          "text": "The restriction to small state spaces"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.6",
+      "id": "4.4.6.68",
+      "text": "What is a practical benefit of GPI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It converges faster in large-scale problems"
+        },
+        {
+          "id": "B",
+          "text": "It eliminates the need for exploration"
+        },
+        {
+          "id": "C",
+          "text": "It ensures deterministic policies in all cases"
+        },
+        {
+          "id": "D",
+          "text": "It simplifies computation by avoiding Bellman updates"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.7",
+      "id": "4.4.7.69",
+      "text": "What is a primary challenge with dynamic programming methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Lack of convergence guarantees"
+        },
+        {
+          "id": "B",
+          "text": "High computational complexity in large state spaces"
+        },
+        {
+          "id": "C",
+          "text": "Dependence on supervised learning"
+        },
+        {
+          "id": "D",
+          "text": "Difficulty in defining reward signals"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.7",
+      "id": "4.4.7.70",
+      "text": "How does the curse of dimensionality affect dynamic programming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It makes rewards harder to compute"
+        },
+        {
+          "id": "B",
+          "text": "It increases the computational cost exponentially with state space size"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for discounting"
+        },
+        {
+          "id": "D",
+          "text": "It leads to non-convergence in policy iteration"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.7",
+      "id": "4.4.7.71",
+      "text": "Which approach can improve the efficiency of dynamic programming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Parallel processing of states"
+        },
+        {
+          "id": "B",
+          "text": "Increasing the discount factor"
+        },
+        {
+          "id": "C",
+          "text": "Decreasing the size of the reward signal"
+        },
+        {
+          "id": "D",
+          "text": "Using random sampling for updates"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.7",
+      "id": "4.4.7.72",
+      "text": "Why is function approximation important for dynamic programming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It simplifies the reward structure"
+        },
+        {
+          "id": "B",
+          "text": "It allows handling of continuous state spaces"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for value functions"
+        },
+        {
+          "id": "D",
+          "text": "It ensures faster convergence"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.7",
+      "id": "4.4.7.73",
+      "text": "What is a trade-off when using approximations in dynamic programming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Faster convergence but reduced accuracy"
+        },
+        {
+          "id": "B",
+          "text": "Improved policies but slower updates"
+        },
+        {
+          "id": "C",
+          "text": "Exact value functions but reduced computational speed"
+        },
+        {
+          "id": "D",
+          "text": "Elimination of exploration but suboptimal policies"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.8",
+      "id": "4.4.8.74",
+      "text": "What is the main benefit of dynamic programming methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They guarantee optimal solutions for small MDPs"
+        },
+        {
+          "id": "B",
+          "text": "They eliminate the need for exploration"
+        },
+        {
+          "id": "C",
+          "text": "They minimize computational costs for all problems"
+        },
+        {
+          "id": "D",
+          "text": "They avoid iterative updates"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "4",
+      "section": "4.8",
+      "id": "4.4.8.75",
+      "text": "How does dynamic programming solve reinforcement learning problems?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By directly searching the policy space"
+        },
+        {
+          "id": "B",
+          "text": "By iteratively evaluating and improving policies"
+        },
+        {
+          "id": "C",
+          "text": "By using supervised learning techniques"
+        },
+        {
+          "id": "D",
+          "text": "By generating deterministic state transitions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.8",
+      "id": "4.4.8.76",
+      "text": "What is a key limitation of dynamic programming methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Lack of convergence in stochastic environments"
+        },
+        {
+          "id": "B",
+          "text": "Dependence on accurate models of the environment"
+        },
+        {
+          "id": "C",
+          "text": "Inability to handle terminal states"
+        },
+        {
+          "id": "D",
+          "text": "Excessive focus on short-term rewards"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.8",
+      "id": "4.4.8.77",
+      "text": "Why are dynamic programming methods considered foundational in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They are the fastest algorithms available"
+        },
+        {
+          "id": "B",
+          "text": "They demonstrate core principles of policy evaluation and improvement"
+        },
+        {
+          "id": "C",
+          "text": "They eliminate the need for reward design"
+        },
+        {
+          "id": "D",
+          "text": "They focus only on deterministic tasks"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "4",
+      "section": "4.8",
+      "id": "4.4.8.78",
+      "text": "What does the Bellman equation provide in the context of dynamic programming?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A way to compute state transitions"
+        },
+        {
+          "id": "B",
+          "text": "A recursive definition for optimal value functions"
+        },
+        {
+          "id": "C",
+          "text": "A method for eliminating exploration"
+        },
+        {
+          "id": "D",
+          "text": "A direct mapping of policies to rewards"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.1",
+      "id": "8.8.1.79",
+      "text": "What is the primary role of a model in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To learn from real-world experience"
+        },
+        {
+          "id": "B",
+          "text": "To predict the environment's response to actions"
+        },
+        {
+          "id": "C",
+          "text": "To maximize the agent's immediate rewards"
+        },
+        {
+          "id": "D",
+          "text": "To replace the value function"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.1",
+      "id": "8.8.1.80",
+      "text": "What is the difference between a sample model and a distribution model?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A sample model is deterministic, while a distribution model is stochastic"
+        },
+        {
+          "id": "B",
+          "text": "A sample model generates a single possible transition, while a distribution model describes all transitions with probabilities"
+        },
+        {
+          "id": "C",
+          "text": "A distribution model learns faster than a sample model"
+        },
+        {
+          "id": "D",
+          "text": "Both perform the same function but differ in computational complexity"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.1",
+      "id": "8.8.1.81",
+      "text": "Which planning approach searches through state-space for an optimal policy?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Plan-space planning"
+        },
+        {
+          "id": "B",
+          "text": "State-space planning"
+        },
+        {
+          "id": "C",
+          "text": "Forward planning"
+        },
+        {
+          "id": "D",
+          "text": "Backward planning"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.1",
+      "id": "8.8.1.82",
+      "text": "How does planning benefit reinforcement learning agents?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It eliminates the need for exploration"
+        },
+        {
+          "id": "B",
+          "text": "It integrates real and simulated experiences to improve policies"
+        },
+        {
+          "id": "C",
+          "text": "It simplifies the reward function"
+        },
+        {
+          "id": "D",
+          "text": "It avoids the use of the environment model"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.1",
+      "id": "8.8.1.83",
+      "text": "What is a major limitation of plan-space planning methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They are too computationally expensive for stochastic sequential decision problems"
+        },
+        {
+          "id": "B",
+          "text": "They require large datasets"
+        },
+        {
+          "id": "C",
+          "text": "They cannot work with episodic tasks"
+        },
+        {
+          "id": "D",
+          "text": "They prioritize short-term rewards"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "8",
+      "section": "8.2",
+      "id": "8.8.2.84",
+      "text": "What distinguishes Dyna-Q agents in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They rely solely on real-world interactions"
+        },
+        {
+          "id": "B",
+          "text": "They integrate learning, planning, and acting into a unified process"
+        },
+        {
+          "id": "C",
+          "text": "They avoid using models of the environment"
+        },
+        {
+          "id": "D",
+          "text": "They use static policies for planning"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.2",
+      "id": "8.8.2.85",
+      "text": "What type of experience is used in Dyna-Q to improve value functions?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Real experience only"
+        },
+        {
+          "id": "B",
+          "text": "Simulated experience only"
+        },
+        {
+          "id": "C",
+          "text": "Both real and simulated experience"
+        },
+        {
+          "id": "D",
+          "text": "None; it relies on predefined policies"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "8",
+      "section": "8.2",
+      "id": "8.8.2.86",
+      "text": "What is a defining characteristic of the Dyna architecture?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Planning and learning occur independently"
+        },
+        {
+          "id": "B",
+          "text": "Planning and acting are performed sequentially"
+        },
+        {
+          "id": "C",
+          "text": "Planning, learning, and model updates occur simultaneously"
+        },
+        {
+          "id": "D",
+          "text": "It avoids planning in favor of direct learning"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "8",
+      "section": "8.2",
+      "id": "8.8.2.87",
+      "text": "In Dyna-Q, how is planning performed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By applying learning algorithms to real experience"
+        },
+        {
+          "id": "B",
+          "text": "By generating and using simulated experiences"
+        },
+        {
+          "id": "C",
+          "text": "By running parallel simulations of possible policies"
+        },
+        {
+          "id": "D",
+          "text": "By using Monte Carlo sampling exclusively"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.2",
+      "id": "8.8.2.88",
+      "text": "What is the key computational trade-off in Dyna-Q agents?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Between real and simulated experiences"
+        },
+        {
+          "id": "B",
+          "text": "Between policy updates and model learning"
+        },
+        {
+          "id": "C",
+          "text": "Between exploration and exploitation"
+        },
+        {
+          "id": "D",
+          "text": "Between the depth of planning and the speed of acting"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapter": "8",
+      "section": "8.3",
+      "id": "8.8.3.89",
+      "text": "What happens when a reinforcement learning model is incorrect?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It results in faster policy convergence"
+        },
+        {
+          "id": "B",
+          "text": "The planning process computes a suboptimal policy"
+        },
+        {
+          "id": "C",
+          "text": "The environment changes to correct the model"
+        },
+        {
+          "id": "D",
+          "text": "The model automatically adjusts to match reality"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.3",
+      "id": "8.8.3.90",
+      "text": "What type of model errors can lead to policy correction?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Optimistic models predicting higher rewards or better transitions"
+        },
+        {
+          "id": "B",
+          "text": "Pessimistic models predicting lower rewards"
+        },
+        {
+          "id": "C",
+          "text": "Stochastic models with equal probabilities"
+        },
+        {
+          "id": "D",
+          "text": "Models that ignore reward signals"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "8",
+      "section": "8.3",
+      "id": "8.8.3.91",
+      "text": "What is the exploration/exploitation trade-off in planning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Exploring to improve the model versus behaving optimally based on the current model"
+        },
+        {
+          "id": "B",
+          "text": "Exploring all possible actions versus focusing on high-reward ones"
+        },
+        {
+          "id": "C",
+          "text": "Balancing the use of sample and distribution models"
+        },
+        {
+          "id": "D",
+          "text": "Using optimistic versus pessimistic models"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "8",
+      "section": "8.3",
+      "id": "8.8.3.92",
+      "text": "Why did the Dyna-Q+ agent outperform Dyna-Q in a shortcut maze?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It used a better exploration policy"
+        },
+        {
+          "id": "B",
+          "text": "It added a bonus reward for long-untried actions"
+        },
+        {
+          "id": "C",
+          "text": "It used deterministic transitions exclusively"
+        },
+        {
+          "id": "D",
+          "text": "It relied solely on real experience"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.3",
+      "id": "8.8.3.93",
+      "text": "What happens when the environment changes for the better, but the policy remains unchanged?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The agent quickly adapts to the new environment"
+        },
+        {
+          "id": "B",
+          "text": "The agent explores less to avoid errors"
+        },
+        {
+          "id": "C",
+          "text": "The model error may go undetected for a long time"
+        },
+        {
+          "id": "D",
+          "text": "The agent automatically identifies and corrects the model"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "8",
+      "section": "8.4",
+      "id": "8.8.4.94",
+      "text": "What is the main idea behind prioritized sweeping?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Performing updates randomly across all states"
+        },
+        {
+          "id": "B",
+          "text": "Focusing updates on state–action pairs that have the largest impact"
+        },
+        {
+          "id": "C",
+          "text": "Avoiding updates for states with low rewards"
+        },
+        {
+          "id": "D",
+          "text": "Planning updates without considering the reward signal"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.4",
+      "id": "8.8.4.95",
+      "text": "Why is backward focusing used in prioritized sweeping?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It ensures all transitions are updated equally"
+        },
+        {
+          "id": "B",
+          "text": "It updates states that directly lead to changed values"
+        },
+        {
+          "id": "C",
+          "text": "It reduces the computational complexity of planning"
+        },
+        {
+          "id": "D",
+          "text": "It prioritizes exploration over exploitation"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.4",
+      "id": "8.8.4.96",
+      "text": "What type of updates are commonly used in prioritized sweeping?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Deterministic updates"
+        },
+        {
+          "id": "B",
+          "text": "Expected updates considering all possible transitions"
+        },
+        {
+          "id": "C",
+          "text": "Randomized updates for sample models"
+        },
+        {
+          "id": "D",
+          "text": "Immediate updates for greedy policies"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.4",
+      "id": "8.8.4.97",
+      "text": "What limitation does prioritized sweeping face in stochastic environments?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It wastes computation on low-probability transitions"
+        },
+        {
+          "id": "B",
+          "text": "It fails to converge to an optimal policy"
+        },
+        {
+          "id": "C",
+          "text": "It cannot use sample models"
+        },
+        {
+          "id": "D",
+          "text": "It focuses exclusively on deterministic rewards"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "8",
+      "section": "8.4",
+      "id": "8.8.4.98",
+      "text": "How does prioritized sweeping improve planning efficiency?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By using multi-step bootstrapping"
+        },
+        {
+          "id": "B",
+          "text": "By reducing exploration"
+        },
+        {
+          "id": "C",
+          "text": "By targeting updates with the largest expected impact"
+        },
+        {
+          "id": "D",
+          "text": "By eliminating low-reward states"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "8",
+      "section": "8.5",
+      "id": "8.8.5.99",
+      "text": "Which type of update yields more precise value estimates?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Sample updates"
+        },
+        {
+          "id": "B",
+          "text": "Expected updates"
+        },
+        {
+          "id": "C",
+          "text": "Stochastic updates"
+        },
+        {
+          "id": "D",
+          "text": "Randomized updates"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.5",
+      "id": "8.8.5.100",
+      "text": "What is the main advantage of sample updates over expected updates?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They consider all possible next states"
+        },
+        {
+          "id": "B",
+          "text": "They require less computation per update"
+        },
+        {
+          "id": "C",
+          "text": "They provide deterministic results"
+        },
+        {
+          "id": "D",
+          "text": "They always lead to faster convergence"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.5",
+      "id": "8.8.5.101",
+      "text": "When are sample and expected updates identical?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "When the environment is deterministic"
+        },
+        {
+          "id": "B",
+          "text": "When there are multiple next states"
+        },
+        {
+          "id": "C",
+          "text": "When the model is stochastic"
+        },
+        {
+          "id": "D",
+          "text": "When the learning rate is zero"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "8",
+      "section": "8.5",
+      "id": "8.8.5.102",
+      "text": "What is the computational cost of an expected update compared to a sample update?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Equal"
+        },
+        {
+          "id": "B",
+          "text": "Lower"
+        },
+        {
+          "id": "C",
+          "text": "Roughly proportional to the branching factor of the environment"
+        },
+        {
+          "id": "D",
+          "text": "Independent of the environment"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "8",
+      "section": "8.5",
+      "id": "8.8.5.103",
+      "text": "Why might sample updates be preferable in practice?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They always yield better policies"
+        },
+        {
+          "id": "B",
+          "text": "They are faster for environments with high branching factors"
+        },
+        {
+          "id": "C",
+          "text": "They avoid sampling errors"
+        },
+        {
+          "id": "D",
+          "text": "They consider all possible outcomes"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.12",
+      "id": "8.8.12.104",
+      "text": "What is the key relationship between planning and learning optimal behavior?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They rely on entirely different value functions"
+        },
+        {
+          "id": "B",
+          "text": "They involve estimating the same value functions"
+        },
+        {
+          "id": "C",
+          "text": "Planning eliminates the need for learning"
+        },
+        {
+          "id": "D",
+          "text": "Learning depends on deterministic planning methods"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.12",
+      "id": "8.8.12.105",
+      "text": "What type of model does dynamic programming require for planning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A sample model"
+        },
+        {
+          "id": "B",
+          "text": "A deterministic model"
+        },
+        {
+          "id": "C",
+          "text": "A distribution model"
+        },
+        {
+          "id": "D",
+          "text": "A heuristic model"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "8",
+      "section": "8.12",
+      "id": "8.8.12.106",
+      "text": "How can learning methods be converted into planning methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By eliminating real experiences"
+        },
+        {
+          "id": "B",
+          "text": "By applying them to simulated experiences generated by a model"
+        },
+        {
+          "id": "C",
+          "text": "By increasing the update frequency"
+        },
+        {
+          "id": "D",
+          "text": "By using deterministic transitions exclusively"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.12",
+      "id": "8.8.12.107",
+      "text": "What is the most natural organization for planning, acting, and model-learning processes?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Sequential and independent"
+        },
+        {
+          "id": "B",
+          "text": "Asynchronous and parallel"
+        },
+        {
+          "id": "C",
+          "text": "Synchronous and sequential"
+        },
+        {
+          "id": "D",
+          "text": "Static and deterministic"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.12",
+      "id": "8.8.12.108",
+      "text": "What is a common feature of incremental planning methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They perform large, infrequent updates"
+        },
+        {
+          "id": "B",
+          "text": "They rely on offline computation exclusively"
+        },
+        {
+          "id": "C",
+          "text": "They use a long series of small backing-up operations"
+        },
+        {
+          "id": "D",
+          "text": "They avoid backing-up value functions"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "8",
+      "section": "8.13",
+      "id": "8.8.13.109",
+      "text": "What is a central strategy shared by all methods discussed in Part I?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Immediate reward maximization"
+        },
+        {
+          "id": "B",
+          "text": "Generalized Policy Iteration (GPI)"
+        },
+        {
+          "id": "C",
+          "text": "Eliminating value functions"
+        },
+        {
+          "id": "D",
+          "text": "Synchronous policy updates"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.13",
+      "id": "8.8.13.110",
+      "text": "What is a key advantage of using value functions in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They reduce the computational complexity of backups"
+        },
+        {
+          "id": "B",
+          "text": "They provide a way to back up values along state trajectories"
+        },
+        {
+          "id": "C",
+          "text": "They allow deterministic policies to converge"
+        },
+        {
+          "id": "D",
+          "text": "They simplify environment dynamics"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.13",
+      "id": "8.8.13.111",
+      "text": "What do sample updates depend on compared to expected updates?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A deterministic environment"
+        },
+        {
+          "id": "B",
+          "text": "A sample trajectory rather than a distribution model"
+        },
+        {
+          "id": "C",
+          "text": "A higher discount factor"
+        },
+        {
+          "id": "D",
+          "text": "The elimination of exploratory actions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "8",
+      "section": "8.13",
+      "id": "8.8.13.112",
+      "text": "What is an example of a method that focuses forward from encountered states?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Dynamic Programming"
+        },
+        {
+          "id": "B",
+          "text": "Temporal Difference (TD) Learning"
+        },
+        {
+          "id": "C",
+          "text": "Monte Carlo Tree Search"
+        },
+        {
+          "id": "D",
+          "text": "Trajectory Sampling"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "8",
+      "section": "8.13",
+      "id": "8.8.13.113",
+      "text": "What is highlighted as a powerful organizing principle in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Deterministic transitions"
+        },
+        {
+          "id": "B",
+          "text": "Immediate policy updates"
+        },
+        {
+          "id": "C",
+          "text": "Value functions and Generalized Policy Iteration"
+        },
+        {
+          "id": "D",
+          "text": "Direct use of terminal states"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "9",
+      "section": "9.1",
+      "id": "9.9.1.114",
+      "text": "What is the purpose of value-function approximation in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To generalize learning across states by using a parameterized function"
+        },
+        {
+          "id": "B",
+          "text": "To compute exact values for all states"
+        },
+        {
+          "id": "C",
+          "text": "To eliminate the need for policies"
+        },
+        {
+          "id": "D",
+          "text": "To reduce the discount factor in state updates"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.1",
+      "id": "9.9.1.115",
+      "text": "(s) represent in value-function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The estimated reward for an action"
+        },
+        {
+          "id": "B",
+          "text": "The expected return starting from state"
+        },
+        {
+          "id": "C",
+          "text": "The optimal value of the state"
+        },
+        {
+          "id": "D",
+          "text": "The Bellman equation for state transitions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.1",
+      "id": "9.9.1.116",
+      "text": "What key benefit does function approximation provide?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Exact predictions for large state spaces"
+        },
+        {
+          "id": "B",
+          "text": "Generalization across states that share similar features"
+        },
+        {
+          "id": "C",
+          "text": "Faster convergence than tabular methods"
+        },
+        {
+          "id": "D",
+          "text": "Elimination of reward signals"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.1",
+      "id": "9.9.1.117",
+      "text": "What is a typical challenge of value-function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Limited applicability to partially observable tasks"
+        },
+        {
+          "id": "B",
+          "text": "Balancing generalization and accuracy in predictions"
+        },
+        {
+          "id": "C",
+          "text": "Dependence on a deterministic environment"
+        },
+        {
+          "id": "D",
+          "text": "Use of non-differentiable activation functions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.1",
+      "id": "9.9.1.118",
+      "text": "Why are weights in function approximation generally fewer than states?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To reduce computational complexity"
+        },
+        {
+          "id": "B",
+          "text": "To ensure higher accuracy for value estimates"
+        },
+        {
+          "id": "C",
+          "text": "To allow updates to generalize across multiple states"
+        },
+        {
+          "id": "D",
+          "text": "To simplify the Bellman updates"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapter": "9",
+      "section": "9.2",
+      "id": "9.9.2.119",
+      "text": "What does the Mean Squared Value Error (VE) measure?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The sum of rewards received in an episode"
+        },
+        {
+          "id": "B",
+          "text": "The squared difference between approximate and true values across states"
+        },
+        {
+          "id": "C",
+          "text": "The variance in the state distribution"
+        },
+        {
+          "id": "D",
+          "text": "The total updates performed by a policy"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.2",
+      "id": "9.9.2.120",
+      "text": "μ(s) defined in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "As the fraction of time spent in each state under policy"
+        },
+        {
+          "id": "B",
+          "text": "As the discounted sum of rewards for each state"
+        },
+        {
+          "id": "C",
+          "text": "As the normalized difference between state values"
+        },
+        {
+          "id": "D",
+          "text": "As the inverse of the feature weights"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.2",
+      "id": "9.9.2.121",
+      "text": "Why is an explicit prediction objective required for function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To handle the interactions between policies and environments"
+        },
+        {
+          "id": "B",
+          "text": "To account for the fact that updates in one state can affect others"
+        },
+        {
+          "id": "C",
+          "text": "To simplify the gradient descent algorithm"
+        },
+        {
+          "id": "D",
+          "text": "To reduce the complexity of bootstrapping"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.2",
+      "id": "9.9.2.122",
+      "text": "η(s) represent?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The number of rewards obtained in state"
+        },
+        {
+          "id": "B",
+          "text": "The expected number of visits to state"
+        },
+        {
+          "id": "C",
+          "text": "The cumulative value of all successor states of"
+        },
+        {
+          "id": "D",
+          "text": "The probability of transitioning out of state"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.2",
+      "id": "9.9.2.123",
+      "text": "μ(s) play in the VE objective function?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It scales rewards by their likelihood"
+        },
+        {
+          "id": "B",
+          "text": "It determines how much each state's error contributes to the total VE"
+        },
+        {
+          "id": "C",
+          "text": "It limits updates to terminal states"
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the need for discounting"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.3",
+      "id": "9.9.3.124",
+      "text": "What is the primary goal of stochastic gradient descent (SGD) in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To compute the optimal policy for a task"
+        },
+        {
+          "id": "B",
+          "text": "To minimize the error between predicted and true values for states"
+        },
+        {
+          "id": "C",
+          "text": "To generalize policies across episodes"
+        },
+        {
+          "id": "D",
+          "text": "To calculate the exact Bellman equation"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.3",
+      "id": "9.9.3.125",
+      "text": "How do semi-gradient methods differ from true gradient methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Semi-gradient methods ignore the effect of weights on the target values"
+        },
+        {
+          "id": "B",
+          "text": "Semi-gradient methods converge faster but lack guarantees of accuracy"
+        },
+        {
+          "id": "C",
+          "text": "Semi-gradient methods use static step sizes"
+        },
+        {
+          "id": "D",
+          "text": "Semi-gradient methods update the weights after an entire episode"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.3",
+      "id": "9.9.3.126",
+      "text": "Why are semi-gradient methods often preferred over true gradient methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They are simpler to implement"
+        },
+        {
+          "id": "B",
+          "text": "They allow faster learning and online updates"
+        },
+        {
+          "id": "C",
+          "text": "They work better with deterministic environments"
+        },
+        {
+          "id": "D",
+          "text": "They use fewer computational resources"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.3",
+      "id": "9.9.3.127",
+      "text": "What is the key update equation for semi-gradient TD(0)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": ""
+        },
+        {
+          "id": "B",
+          "text": ""
+        },
+        {
+          "id": "C",
+          "text": ""
+        },
+        {
+          "id": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.3",
+      "id": "9.9.3.128",
+      "text": "What is a common application of semi-gradient methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Generalizing learning to new environments"
+        },
+        {
+          "id": "B",
+          "text": "Bootstrapping value updates during continuing tasks"
+        },
+        {
+          "id": "C",
+          "text": "Simplifying state transitions"
+        },
+        {
+          "id": "D",
+          "text": "Avoiding the use of Bellman equations"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.4",
+      "id": "9.9.4.129",
+      "text": "What is the defining characteristic of linear function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The value function is represented as a weighted sum of state features"
+        },
+        {
+          "id": "B",
+          "text": "It uses non-linear activation functions to approximate state values"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for feature construction"
+        },
+        {
+          "id": "D",
+          "text": "It computes exact values for all states"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.4",
+      "id": "9.9.4.130",
+      "text": "What is the formula for a linear value function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": ""
+        },
+        {
+          "id": "B",
+          "text": ""
+        },
+        {
+          "id": "C",
+          "text": ""
+        },
+        {
+          "id": "D",
+          "text": ""
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.4",
+      "id": "9.9.4.131",
+      "text": "What is the primary advantage of linear methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They can handle large-scale state spaces with fewer parameters"
+        },
+        {
+          "id": "B",
+          "text": "They require no feature engineering"
+        },
+        {
+          "id": "C",
+          "text": "They provide exact predictions for all states"
+        },
+        {
+          "id": "D",
+          "text": "They converge faster than non-linear methods"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.4",
+      "id": "9.9.4.132",
+      "text": "What is a common limitation of linear methods in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They cannot generalize across similar states"
+        },
+        {
+          "id": "B",
+          "text": "They are limited in representing complex, non-linear relationships"
+        },
+        {
+          "id": "C",
+          "text": "They require labeled data for training"
+        },
+        {
+          "id": "D",
+          "text": "They are computationally expensive"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.4",
+      "id": "9.9.4.133",
+      "text": "In linear methods, what does feature construction enable?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Automatic identification of state similarities"
+        },
+        {
+          "id": "B",
+          "text": "Representation of complex relationships in a simple, parameterized form"
+        },
+        {
+          "id": "C",
+          "text": "Faster policy updates without computation"
+        },
+        {
+          "id": "D",
+          "text": "Direct approximation of reward functions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.5",
+      "id": "9.9.5.134",
+      "text": "What is the primary goal of feature construction in linear methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To improve the computational efficiency of updates"
+        },
+        {
+          "id": "B",
+          "text": "To enable better generalization across states"
+        },
+        {
+          "id": "C",
+          "text": "To eliminate the need for bootstrapping"
+        },
+        {
+          "id": "D",
+          "text": "To reduce the dimensionality of the state space"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.5",
+      "id": "9.9.5.135",
+      "text": "What are tile coding and radial basis functions examples of?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Non-linear function approximators"
+        },
+        {
+          "id": "B",
+          "text": "Feature construction techniques"
+        },
+        {
+          "id": "C",
+          "text": "Reward shaping methods"
+        },
+        {
+          "id": "D",
+          "text": "Policy optimization algorithms"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.5",
+      "id": "9.9.5.136",
+      "text": "Why is feature scaling important in linear function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To ensure stability and faster convergence during updates"
+        },
+        {
+          "id": "B",
+          "text": "To avoid overfitting the policy to a specific task"
+        },
+        {
+          "id": "C",
+          "text": "To increase the number of parameters for approximation"
+        },
+        {
+          "id": "D",
+          "text": "To eliminate the need for discount factors"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.5",
+      "id": "9.9.5.137",
+      "text": "What is the trade-off involved in feature construction?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Balancing between simplicity and representation power"
+        },
+        {
+          "id": "B",
+          "text": "Increasing accuracy at the cost of generalization"
+        },
+        {
+          "id": "C",
+          "text": "Faster convergence versus higher computational costs"
+        },
+        {
+          "id": "D",
+          "text": "Maximizing rewards while avoiding exploration"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.5",
+      "id": "9.9.5.138",
+      "text": "What is the role of domain knowledge in feature construction?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To define a reward signal for the environment"
+        },
+        {
+          "id": "B",
+          "text": "To design features that better represent the task"
+        },
+        {
+          "id": "C",
+          "text": "To eliminate the need for a policy"
+        },
+        {
+          "id": "D",
+          "text": "To compute the Bellman optimality equation"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.6",
+      "id": "9.9.6.139",
+      "text": "What is the primary advantage of nonlinear function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It can approximate complex relationships between states and values"
+        },
+        {
+          "id": "B",
+          "text": "It requires fewer parameters than linear methods"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for feature construction"
+        },
+        {
+          "id": "D",
+          "text": "It ensures faster convergence for large-scale problems"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.6",
+      "id": "9.9.6.140",
+      "text": "What is a common example of a nonlinear function approximator used in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Neural networks"
+        },
+        {
+          "id": "B",
+          "text": "Tile coding"
+        },
+        {
+          "id": "C",
+          "text": "Dynamic programming"
+        },
+        {
+          "id": "D",
+          "text": "Linear regression"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.6",
+      "id": "9.9.6.141",
+      "text": "What challenge is associated with nonlinear methods in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They do not generalize across states"
+        },
+        {
+          "id": "B",
+          "text": "They are prone to instability and divergence during updates"
+        },
+        {
+          "id": "C",
+          "text": "They cannot represent continuous state spaces"
+        },
+        {
+          "id": "D",
+          "text": "They are incompatible with bootstrapping"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.6",
+      "id": "9.9.6.142",
+      "text": "What is the main difference between linear and nonlinear function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Nonlinear methods can capture more complex patterns in data"
+        },
+        {
+          "id": "B",
+          "text": "Nonlinear methods require no parameter tuning"
+        },
+        {
+          "id": "C",
+          "text": "Linear methods are better suited for stochastic environments"
+        },
+        {
+          "id": "D",
+          "text": "Nonlinear methods eliminate the need for a discount factor"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.6",
+      "id": "9.9.6.143",
+      "text": "Why are activation functions used in nonlinear approximators like neural networks?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To add non-linearity, enabling the approximation of complex relationships"
+        },
+        {
+          "id": "B",
+          "text": "To ensure convergence of the value function"
+        },
+        {
+          "id": "C",
+          "text": "To minimize the computational cost of updates"
+        },
+        {
+          "id": "D",
+          "text": "To simplify feature scaling"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.7",
+      "id": "9.9.7.144",
+      "text": "What does bias represent in the context of function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The error introduced by approximating a complex function with a simpler model"
+        },
+        {
+          "id": "B",
+          "text": "The variance of the estimated function across states"
+        },
+        {
+          "id": "C",
+          "text": "The randomness in the reward signal"
+        },
+        {
+          "id": "D",
+          "text": "The deviation from the Bellman optimality"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.7",
+      "id": "9.9.7.145",
+      "text": "What does variance represent in function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The sensitivity of the learned function to different training datasets"
+        },
+        {
+          "id": "B",
+          "text": "The difference between predicted and true values"
+        },
+        {
+          "id": "C",
+          "text": "The stability of the gradient update process"
+        },
+        {
+          "id": "D",
+          "text": "The error in feature scaling"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.7",
+      "id": "9.9.7.146",
+      "text": "What is the bias-variance trade-off in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Balancing the complexity of the model with its sensitivity to data"
+        },
+        {
+          "id": "B",
+          "text": "Deciding between deterministic and stochastic policies"
+        },
+        {
+          "id": "C",
+          "text": "Prioritizing exploration over exploitation"
+        },
+        {
+          "id": "D",
+          "text": "Maximizing rewards while minimizing value errors"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.7",
+      "id": "9.9.7.147",
+      "text": "What happens when a model has high variance?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It becomes overly sensitive to small changes in training data"
+        },
+        {
+          "id": "B",
+          "text": "It fails to capture important patterns in the environment"
+        },
+        {
+          "id": "C",
+          "text": "It converges faster than low-variance models"
+        },
+        {
+          "id": "D",
+          "text": "It eliminates overfitting in the policy"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.7",
+      "id": "9.9.7.148",
+      "text": "How can overfitting in nonlinear function approximation be addressed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By regularization techniques such as weight decay"
+        },
+        {
+          "id": "B",
+          "text": "By increasing the learning rate"
+        },
+        {
+          "id": "C",
+          "text": "By using deterministic policies exclusively"
+        },
+        {
+          "id": "D",
+          "text": "By reducing the size of the state space"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.12",
+      "id": "9.9.12.149",
+      "text": "What is the key advantage of using function approximation in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It allows generalization across similar states and actions"
+        },
+        {
+          "id": "B",
+          "text": "It eliminates the need for policy improvement"
+        },
+        {
+          "id": "C",
+          "text": "It ensures exact value estimates for all states"
+        },
+        {
+          "id": "D",
+          "text": "It simplifies the reward structure of the environment"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.12",
+      "id": "9.9.12.150",
+      "text": "Which type of function approximation is most suited for large-scale problems with continuous state spaces?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Linear methods"
+        },
+        {
+          "id": "B",
+          "text": "Nonlinear methods like neural networks"
+        },
+        {
+          "id": "C",
+          "text": "Tabular methods"
+        },
+        {
+          "id": "D",
+          "text": "Dynamic programming"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "9",
+      "section": "9.12",
+      "id": "9.9.12.151",
+      "text": "What is the primary trade-off introduced by function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Between the generality of the model and computational cost"
+        },
+        {
+          "id": "B",
+          "text": "Between accuracy and convergence speed"
+        },
+        {
+          "id": "C",
+          "text": "Between policy improvement and environment modeling"
+        },
+        {
+          "id": "D",
+          "text": "Between tabular learning and bootstrapping"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.12",
+      "id": "9.9.12.152",
+      "text": "Why are semi-gradient methods significant in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They allow function approximation without computing true gradients"
+        },
+        {
+          "id": "B",
+          "text": "They eliminate the need for stochastic updates"
+        },
+        {
+          "id": "C",
+          "text": "They guarantee convergence for all types of approximators"
+        },
+        {
+          "id": "D",
+          "text": "They are computationally more expensive but more accurate"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "9",
+      "section": "9.12",
+      "id": "9.9.12.153",
+      "text": "What is a major limitation of nonlinear function approximation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It is prone to instability and divergence during updates"
+        },
+        {
+          "id": "B",
+          "text": "It cannot generalize across similar states"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the role of rewards in learning"
+        },
+        {
+          "id": "D",
+          "text": "It is only applicable to deterministic environments"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "17",
+      "section": "17.2",
+      "id": "17.17.2.154",
+      "text": "What is the main purpose of temporal abstraction in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To simplify state transitions in high-dimensional environments"
+        },
+        {
+          "id": "B",
+          "text": "To enable decision-making at multiple time scales"
+        },
+        {
+          "id": "C",
+          "text": "To eliminate the need for discount factors"
+        },
+        {
+          "id": "D",
+          "text": "To reduce the action space by ignoring low-level actions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.2",
+      "id": "17.17.2.155",
+      "text": "What is an option in the context of reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A low-level action taken over one time step"
+        },
+        {
+          "id": "B",
+          "text": "A policy and a state-dependent termination function"
+        },
+        {
+          "id": "C",
+          "text": "A deterministic trajectory to a goal state"
+        },
+        {
+          "id": "D",
+          "text": "A set of possible actions available in a state"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.2",
+      "id": "17.17.2.156",
+      "text": "How does the Bellman equation generalize for hierarchical policies with options?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By introducing additional state variables"
+        },
+        {
+          "id": "B",
+          "text": "By incorporating termination probabilities of options"
+        },
+        {
+          "id": "C",
+          "text": "By redefining reward functions as state-independent"
+        },
+        {
+          "id": "D",
+          "text": "By ignoring cumulative rewards"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.2",
+      "id": "17.17.2.157",
+      "text": "What advantage do options provide for reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They simplify modeling by assuming a stationary environment"
+        },
+        {
+          "id": "B",
+          "text": "They allow learning and planning over extended time horizons"
+        },
+        {
+          "id": "C",
+          "text": "They guarantee optimal policies in large state spaces"
+        },
+        {
+          "id": "D",
+          "text": "They eliminate the need for function approximation"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.2",
+      "id": "17.17.2.158",
+      "text": "What happens when only a subset of options is considered in each state during planning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The policy converges faster, but it may be suboptimal"
+        },
+        {
+          "id": "B",
+          "text": "The learning rate decreases, leading to slower convergence"
+        },
+        {
+          "id": "C",
+          "text": "The policy becomes deterministic"
+        },
+        {
+          "id": "D",
+          "text": "The Bellman equation becomes undefined"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "17",
+      "section": "17.3",
+      "id": "17.17.3.159",
+      "text": "What is the primary challenge in reinforcement learning with partial observability?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The environment emits hidden states instead of observations"
+        },
+        {
+          "id": "B",
+          "text": "Observations may not provide complete information about the environment's state"
+        },
+        {
+          "id": "C",
+          "text": "Policies become stochastic rather than deterministic"
+        },
+        {
+          "id": "D",
+          "text": "The reward signal cannot be computed"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.3",
+      "id": "17.17.3.160",
+      "text": "How can the Markov property be approximately satisfied in partially observable environments?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By using a state-update function to summarize history compactly"
+        },
+        {
+          "id": "B",
+          "text": "By ensuring observations are deterministic"
+        },
+        {
+          "id": "C",
+          "text": "By minimizing the state-action space"
+        },
+        {
+          "id": "D",
+          "text": "By applying Monte Carlo methods exclusively"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "17",
+      "section": "17.3",
+      "id": "17.17.3.161",
+      "text": "What is a Markov state in the context of partial observability?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A deterministic representation of the environment’s dynamics"
+        },
+        {
+          "id": "B",
+          "text": "A compact summary of history that satisfies the Markov property"
+        },
+        {
+          "id": "C",
+          "text": "A stochastic estimate of future observations"
+        },
+        {
+          "id": "D",
+          "text": "A policy that generalizes across multiple environments"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.3",
+      "id": "17.17.3.162",
+      "text": "Which approach is commonly used to handle partial observability?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Tabular methods"
+        },
+        {
+          "id": "B",
+          "text": "Bayesian belief states"
+        },
+        {
+          "id": "C",
+          "text": "Random exploration strategies"
+        },
+        {
+          "id": "D",
+          "text": "Discount factor adjustments"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.3",
+      "id": "17.17.3.163",
+      "text": "What role does the state-update function play in reinforcement learning with partial observability?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It directly optimizes the reward signal"
+        },
+        {
+          "id": "B",
+          "text": "It recursively computes the agent’s state from observations and actions"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for policies"
+        },
+        {
+          "id": "D",
+          "text": "It minimizes the computational complexity of transitions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.4",
+      "id": "17.17.4.164",
+      "text": "Why is designing an effective reward signal critical in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It simplifies state transitions in high-dimensional environments"
+        },
+        {
+          "id": "B",
+          "text": "It frames the agent’s goal and assesses progress toward it"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates the need for explicit policies"
+        },
+        {
+          "id": "D",
+          "text": "It guarantees faster convergence of value functions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.4",
+      "id": "17.17.4.165",
+      "text": "What challenge does sparse reward pose in reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The agent cannot explore the state space effectively"
+        },
+        {
+          "id": "B",
+          "text": "The agent may wander aimlessly, encountering rewards infrequently"
+        },
+        {
+          "id": "C",
+          "text": "The Bellman equation becomes undefined"
+        },
+        {
+          "id": "D",
+          "text": "The policy becomes suboptimal"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.4",
+      "id": "17.17.4.166",
+      "text": "What is reward shaping?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Modifying the reward signal to encourage specific behaviors"
+        },
+        {
+          "id": "B",
+          "text": "Eliminating rewards for non-goal states"
+        },
+        {
+          "id": "C",
+          "text": "Designing state-dependent policies"
+        },
+        {
+          "id": "D",
+          "text": "Reducing the dimensionality of the state space"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "17",
+      "section": "17.4",
+      "id": "17.17.4.167",
+      "text": "What is one potential risk of poorly designed reward signals?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Agents may fail to explore effectively"
+        },
+        {
+          "id": "B",
+          "text": "Agents may exploit unintended ways to maximize reward"
+        },
+        {
+          "id": "C",
+          "text": "The environment may become unstable"
+        },
+        {
+          "id": "D",
+          "text": "Learning rates may diverge"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.4",
+      "id": "17.17.4.168",
+      "text": "How does inverse reinforcement learning help in reward design?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By directly specifying the agent’s optimal policy"
+        },
+        {
+          "id": "B",
+          "text": "By recovering the expert’s reward signal from observed behavior"
+        },
+        {
+          "id": "C",
+          "text": "By eliminating the need for a discount factor"
+        },
+        {
+          "id": "D",
+          "text": "By simplifying value-function approximation"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.6",
+      "id": "17.17.6.169",
+      "text": "What is a significant challenge in developing truly intelligent agents?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Overcoming the instability of neural networks"
+        },
+        {
+          "id": "B",
+          "text": "Creating complete, interactive agents with general adaptability"
+        },
+        {
+          "id": "C",
+          "text": "Reducing the computational complexity of reinforcement learning algorithms"
+        },
+        {
+          "id": "D",
+          "text": "Eliminating stochasticity in policies"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.6",
+      "id": "17.17.6.170",
+      "text": "Why is reinforcement learning considered a critical component of future AI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It enables supervised learning at scale"
+        },
+        {
+          "id": "B",
+          "text": "It focuses on learning from dynamic interactions with the environment"
+        },
+        {
+          "id": "C",
+          "text": "It guarantees optimal policies for all tasks"
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the need for function approximation"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.6",
+      "id": "17.17.6.171",
+      "text": "What is a key advantage of reinforcement learning in decision-making?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It optimizes decisions by considering long-term consequences"
+        },
+        {
+          "id": "B",
+          "text": "It prioritizes immediate rewards over cumulative returns"
+        },
+        {
+          "id": "C",
+          "text": "It eliminates uncertainty in real-world environments"
+        },
+        {
+          "id": "D",
+          "text": "It generalizes policies across different domains"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapter": "17",
+      "section": "17.6",
+      "id": "17.17.6.172",
+      "text": "What is one major risk of reinforcement learning in real-world applications?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The agent may fail to converge to an optimal policy"
+        },
+        {
+          "id": "B",
+          "text": "Poorly designed reward signals may lead to undesirable behaviors"
+        },
+        {
+          "id": "C",
+          "text": "Exploration may destabilize the environment"
+        },
+        {
+          "id": "D",
+          "text": "The agent may overfit to simulated environments"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapter": "17",
+      "section": "17.6",
+      "id": "17.17.6.173",
+      "text": "What is a practical approach to mitigate risks in real-world reinforcement learning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Using extensive simulations before deploying agents in the real world"
+        },
+        {
+          "id": "B",
+          "text": "Eliminating exploration in all policies"
+        },
+        {
+          "id": "C",
+          "text": "Prioritizing immediate rewards over cumulative returns"
+        },
+        {
+          "id": "D",
+          "text": "Ensuring deterministic transitions"
+        }
+      ],
+      "correctAnswer": "A"
+    }
+  ]
+}
