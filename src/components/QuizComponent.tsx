@@ -9,6 +9,7 @@ export default function QuizComponent() {
   const [showResults, setShowResults] = useState(false);
   const [numQuestions, setNumQuestions] = useState<number>(10); // default to 10 questions
   const [quizStarted, setQuizStarted] = useState(false);
+  const [showQuizReview, setShowQuizReview] = useState(false);
 
   // Randomly select questions when quiz starts
   const selectedQuestions = useMemo(() => {
@@ -102,22 +103,52 @@ export default function QuizComponent() {
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl font-bold text-center mb-8 text-white">Test Results</h1>
           <div className="bg-gray-800 shadow rounded-lg p-6">
-            <p className="text-xl text-center text-gray-200">
+            <p className="text-xl text-center text-gray-200 mb-6">
               You scored {score} out of {selectedQuestions.length}
             </p>
-            <div className="flex gap-4 mt-4">
+            
+            {/* Quiz Review Section */}
+            <div className="space-y-8 mb-8">
+              {selectedQuestions.map((question, index) => {
+                const isCorrect = selectedAnswers[question.id] === question.correctAnswer;
+                const selectedChoice = question.choices.find(c => c.id === selectedAnswers[question.id]);
+                const correctChoice = question.choices.find(c => c.id === question.correctAnswer);
+
+                return (
+                  <div key={question.id} className={`p-4 rounded-lg border ${
+                    isCorrect ? 'border-green-600 bg-gray-800/50' : 'border-red-600 bg-gray-800/50'
+                  }`}>
+                    <p className="text-lg text-white mb-4">
+                      {index + 1}. {question.text}
+                    </p>
+                    
+                    <div className="space-y-2 ml-4">
+                      <p className="text-gray-300">
+                        Your answer: <span className={isCorrect ? 'text-green-400' : 'text-red-400'}>
+                          {selectedChoice?.text}
+                        </span>
+                      </p>
+                      
+                      {!isCorrect && (
+                        <p className="text-gray-300">
+                          Correct answer: <span className="text-green-400">{correctChoice?.text}</span>
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="flex gap-4">
               <button
-                onClick={() => {
-                  setQuizStarted(false);
-                }}
+                onClick={() => setQuizStarted(false)}
                 className="flex-1 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
               >
                 New Quiz
               </button>
               <button
-                onClick={() => {
-                  startQuiz();
-                }}
+                onClick={startQuiz}
                 className="flex-1 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700"
               >
                 Retry Same Questions
